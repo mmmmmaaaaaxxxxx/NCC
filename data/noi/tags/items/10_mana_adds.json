@@ -1,0 +1,24 @@
+{
+    "values": [
+        "#minecraft:signs",
+        "#minecraft:hanging_signs",
+        "#minecraft:music_discs",
+        "#minecraft:wool",
+        "egg",
+        "heart_of_the_sea",
+        "tinted_glass",
+        "bell",
+        "sculk_shrieker",
+        "#noi:generic_glass",
+        "allium",
+        "popped_chorus_fruit",
+        "lodestone",
+        "lightning_rod",
+        "bone_block",
+        "brown_mushroom",
+        "red_mushroom",
+        "nether_star",
+        "fire_charge",
+        "fletching_table"
+    ]
+}

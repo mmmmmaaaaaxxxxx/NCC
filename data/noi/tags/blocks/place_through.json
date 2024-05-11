@@ -1,0 +1,11 @@
+{
+    "values": [
+        "air",
+        "light",
+        "water",
+        "lava",
+        "structure_void",
+        "minecraft:cave_air",
+        "minecraft:void_air"
+    ]
+}

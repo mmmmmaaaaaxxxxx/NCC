@@ -1,0 +1,15 @@
+{
+    "values": [
+        "#noi:generic_balls",
+        "#noi:generic_blocks",
+        "raw_copper",
+        "potion",
+        "stick",
+        "glowstone_dust",
+        "dropper",
+        "spectral_arrow",
+        "copper_ore",
+        "deepslate_copper_ore",
+        "iron_block"
+    ]
+}

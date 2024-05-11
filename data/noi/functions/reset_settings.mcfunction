@@ -1,0 +1,1 @@
+scoreboard players set .global_max_mana noi.settings 200

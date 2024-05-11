@@ -1,0 +1,33 @@
+{
+    "values": [
+        "#minecraft:noteblock_top_instruments",
+        "recovery_compass",
+        "#noi:generic_dyes",
+        "pointed_dripstone",
+        "pufferfish",
+        "conduit",
+        "anvil",
+        "#noi:generic_glass",
+        "torchflower_seeds",
+        "pitcher_pod",
+        "pufferfish_bucket",
+        "allium",
+        "lodestone",
+        "tinted_glass",
+        "gunpowder",
+        "shulker_shell",
+        "piston",
+        "sticky_piston",
+        "#minecraft:tools",
+        "bucket",
+        "sculk_catalyst",
+        "minecraft:moss_block",
+        "nether_star",
+        "goat_horn",
+        "iron_nugget",
+        "brick",
+        "fletching_table",
+        "writable_book",
+        "tuff"
+    ]
+}

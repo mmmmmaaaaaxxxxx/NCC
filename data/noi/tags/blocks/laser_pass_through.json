@@ -1,0 +1,23 @@
+{
+    "values": [
+        "air",
+        "light",
+        "water",
+        "glass",
+        "glass_pane",
+        "#minecraft:fences",
+        "#minecraft:fence_gates",
+        "#minecraft:leaves",
+        "redstone_wire",
+        "wall_torch",
+        "soul_wall_torch",
+        "redstone_wall_torch",
+        "torch",
+        "soul_torch",
+        "redstone_torch",
+        "#minecraft:signs",
+        "#minecraft:wall_signs",
+        "#minecraft:trapdoors",
+        "#minecraft:doors"
+    ]
+}

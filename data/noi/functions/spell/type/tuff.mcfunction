@@ -1,0 +1,1 @@
+execute facing ^ ^ ^1 positioned as @s run tp @s ~ ~ ~ ~ ~

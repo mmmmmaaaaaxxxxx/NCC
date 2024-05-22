@@ -11,7 +11,6 @@ execute as @e[type=marker,tag=noi.spelldelay,scores={noi.lifetime=0}] at @s run 
 execute as @e[scores={noi.lifetime=..0}] run kill
 
 execute as @a[scores={noi.clicked=1..},tag=!noi.nowand] at @s anchored eyes run function noi:spell/clicked
-
 scoreboard players reset @a noi.clicked
 
 title @a[scores={noi.stored_mana=0}] actionbar [{"text":"Mana: ","color":"#CC3ED6"},{"score":{"name":"*","objective":"noi.mana"},"color":"#CC3ED6"}]

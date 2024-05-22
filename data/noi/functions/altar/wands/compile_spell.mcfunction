@@ -60,4 +60,4 @@ execute store result entity @s item.tag.Spell.Mana int .01 run scoreboard player
 execute unless data entity @s item.tag.BaseManaCost run data modify entity @s item.tag.BaseManaCost set value 2
 
 #the second :D
-data modify entity @s item.tag."noi.wand_format" set value 1
+data modify entity @s item.tag."noi.wand_format" set value 2

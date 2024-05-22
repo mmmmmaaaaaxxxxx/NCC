@@ -31,8 +31,9 @@
         "splash_potion",
         "lingering_potion",
         "feather",
-        "ender_pearl",
         "bricks",
-        "tuff"
+        "tuff",
+        "beacon",
+        "netherrack"
     ]
 }

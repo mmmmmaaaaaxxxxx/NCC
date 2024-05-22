@@ -23,3 +23,5 @@ execute positioned ~-.5 ~ ~-13.5 run function noi:altar/wands/remove_displays
 execute positioned ~-.5 ~ ~-14.5 run function noi:altar/wands/remove_displays
 execute positioned ~-.5 ~ ~-15.5 run function noi:altar/wands/remove_displays
 execute positioned ~-.5 ~ ~-16.5 run function noi:altar/wands/remove_displays
+
+execute as @e[tag=current] if entity @s[tag=noi.temporary_wandholder] run kill

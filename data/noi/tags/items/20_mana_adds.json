@@ -43,6 +43,10 @@
         "#minecraft:slabs",
         "#minecraft:walls",
         "#minecraft:stairs",
-        "writable_book"
+        "writable_book",
+        "beacon",
+        "netherrack",
+        "obsidian",
+        "crying_obsidian"
     ]
 }

@@ -28,6 +28,15 @@
         "brick",
         "fletching_table",
         "writable_book",
-        "tuff"
+        "tuff",
+        "beacon",
+        "end_rod",
+        "ender_pearl",
+        "flint",
+        "netherrack",
+        "firework_star",
+        "ink_sac",
+        "glow_ink_sac",
+        "crying_obsidian"
     ]
 }

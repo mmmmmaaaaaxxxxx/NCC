@@ -2,21 +2,20 @@
 execute as @a[tag=noi.remove_resistance] run function noi:spell/extra/iron_ingot_1
 
 execute unless score .global_max_mana noi.settings matches ..-1 run scoreboard players operation @a noi.max_mana = .global_max_mana noi.settings
+scoreboard players add #timer noi.math 1
+execute if score #timer noi.math >= .mana_tick_length noi.settings run function noi:mana_tick
 
 execute as @e[scores={noi.cooldown=1..}] run scoreboard players remove @s noi.cooldown 1
 execute as @e[scores={noi.lifetime=1..}] run scoreboard players remove @s noi.lifetime 1
+execute as @e[type=marker,tag=noi.spelldelay,scores={noi.lifetime=0}] at @s run function noi:spell/extra/const_direction_trigger
 execute as @e[scores={noi.lifetime=..0}] run kill
 
-execute as @a[scores={noi.clicked=1..},nbt={SelectedItem:{tag:{noi.wand:1b,noi.wand_format:1}}},tag=!noi.nowand] at @s positioned ~ ~1.5 ~ run function noi:spell/cast with entity @s SelectedItem.tag.Spell
-execute as @a[scores={noi.clicked=1..},nbt={SelectedItem:{tag:{noi.wand:1b}}},tag=!noi.nowand] unless entity @s[nbt={SelectedItem:{tag:{noi.wand_format:1}}}] run tellraw @s {"text":"This wand is out of date! Please recompile it to update it to the most recent version!","color":"red"}
+execute as @a[scores={noi.clicked=1..},tag=!noi.nowand] at @s anchored eyes run function noi:spell/clicked
 
 scoreboard players reset @a noi.clicked
 
 title @a[scores={noi.stored_mana=0}] actionbar [{"text":"Mana: ","color":"#CC3ED6"},{"score":{"name":"*","objective":"noi.mana"},"color":"#CC3ED6"}]
 title @a[scores={noi.stored_mana=1..}] actionbar [{"text":"Mana: ","color":"#CC3ED6"},{"score":{"name":"*","objective":"noi.mana"},"color":"#CC3ED6"},{"text":" (+","color":"#9E72A1"},{"score":{"name":"*","objective":"noi.stored_mana"},"color":"#9E72A1"},{"text":")","color":"#9E72A1"}]
-
-scoreboard players add #timer noi.math 1
-execute if score #timer noi.math matches 5.. run function noi:mana_tick
 
 execute as @e[type=marker,tag=noi.bouncy_object,predicate=noi:riding] at @s run function noi:spell/extra/get_vehicle_motion
 execute as @e[type=marker,tag=noi.ball_mod,predicate=noi:riding] at @s run function noi:spell/extra/ball_mod with entity @s data

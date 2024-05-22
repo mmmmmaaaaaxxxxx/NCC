@@ -10,6 +10,9 @@
         "spectral_arrow",
         "copper_ore",
         "deepslate_copper_ore",
-        "iron_block"
+        "iron_block",
+        "barrel",
+        "ender_chest",
+        "activator_rail"
     ]
 }

@@ -1,5 +1,6 @@
 {
     "values": [
+        "echo_shard",
         "glow_berries",
         "milk_bucket",
         "honey_bottle",
@@ -37,6 +38,7 @@
         "observer",
         "chest",
         "nether_star",
-        "note_block"
+        "note_block",
+        "beacon"
     ]
 }

@@ -4,5 +4,3 @@ execute as @e[tag=current2] run function noi:altar/wands/displays
 item modify entity @s weapon.mainhand noi:remove_one
 tag @e[tag=current] remove noi.empty
 tag @e[tag=current] add done
-
-

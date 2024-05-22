@@ -18,11 +18,8 @@ execute store result storage temp:local it int 1 run scoreboard players get i no
 execute if score i noi.math matches 1.. run function noi:spell/extra/dispenser_loop_random with storage temp:local
 
 #run the scrambled spell in 1s (to make it less worth it to spam dispensers for cheaper spells)
-summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["current"]}
-scoreboard players set @e[tag=current] noi.lifetime 20
-summon marker ~ ~ ~ {Tags:["noi.const_direction","current2"]}
+summon marker ~ ~ ~ {Tags:["noi.spelldelay","current2"]}
 data modify entity @e[tag=current2,limit=1] data set from storage temp:local macro
 tp @e[tag=current2] ~ ~ ~ facing ^ ^ ^1
-ride @e[tag=current2,limit=1] mount @e[tag=current,limit=1]
-tag @e[tag=current] remove current
+scoreboard players set @e[tag=current2] noi.lifetime 20
 tag @e[tag=current2] remove current2

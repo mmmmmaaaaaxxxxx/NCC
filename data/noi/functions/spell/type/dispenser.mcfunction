@@ -23,3 +23,6 @@ data modify entity @e[tag=current2,limit=1] data set from storage temp:local mac
 tp @e[tag=current2] ~ ~ ~ facing ^ ^ ^1
 scoreboard players set @e[tag=current2] noi.lifetime 20
 tag @e[tag=current2] remove current2
+
+
+playsound minecraft:block.dispenser.launch player @a[distance=..4]

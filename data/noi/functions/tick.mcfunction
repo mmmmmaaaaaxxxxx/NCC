@@ -7,7 +7,8 @@ execute if score #timer noi.math >= .mana_tick_length noi.settings run function 
 
 execute as @e[scores={noi.cooldown=1..}] run scoreboard players remove @s noi.cooldown 1
 execute as @e[scores={noi.lifetime=1..}] run scoreboard players remove @s noi.lifetime 1
-execute as @e[type=marker,tag=noi.spelldelay,scores={noi.lifetime=0}] at @s run function noi:spell/extra/const_direction_trigger
+execute as @e[type=marker,tag=noi.spelldelay] at @s run function noi:spelldelay_tick
+
 execute as @e[scores={noi.lifetime=..0}] run kill
 
 execute as @a[scores={noi.clicked=1..},tag=!noi.nowand] at @s anchored eyes run function noi:spell/clicked

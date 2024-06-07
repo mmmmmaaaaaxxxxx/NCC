@@ -4,7 +4,7 @@
     "predicate": {
       "equipment": {
         "mainhand": {
-          "tag": "noi:generic_sword"
+          "items": "#noi:generic_sword"
         }
       }
     }

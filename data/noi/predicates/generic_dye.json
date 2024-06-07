@@ -4,7 +4,7 @@
     "predicate": {
       "equipment": {
         "mainhand": {
-          "tag": "noi:generic_dyes"
+          "items": "#noi:generic_dyes"
         }
       }
     }

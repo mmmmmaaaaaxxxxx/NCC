@@ -4,7 +4,7 @@
     "predicate": {
       "equipment": {
         "mainhand": {
-          "tag": "noi:2_mana_mults"
+          "items": "#noi:2_mana_mults"
         }
       }
     }

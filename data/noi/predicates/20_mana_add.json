@@ -4,7 +4,7 @@
     "predicate": {
       "equipment": {
         "mainhand": {
-          "tag": "noi:20_mana_adds"
+          "items": "#noi:20_mana_adds"
         }
       }
     }

@@ -1,6 +1,6 @@
 execute as @e[type=item_display,distance=...0001,tag=noi.spellholder_display,limit=1] run function noi:altar/wands/compile_spell
 function noi:altar/wands/compile_lore
-data modify entity @e[type=item_display,distance=...0001,tag=noi.spellholder_display,limit=1] item.tag.display.Lore set from storage temp:local wand_lore
+data modify entity @e[type=item_display,distance=...0001,tag=noi.spellholder_display,limit=1] item.components.minecraft:lore set from storage temp:local wand_lore
 item replace entity @s weapon.mainhand from entity @e[type=item_display,distance=...0001,tag=noi.spellholder_display,limit=1] container.0
 kill @e[type=item_display,distance=...0001,tag=noi.spellholder_display]
 

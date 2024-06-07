@@ -4,7 +4,7 @@
     "predicate": {
       "equipment": {
         "mainhand": {
-          "tag": "noi:generic_glass"
+          "items": "#noi:generic_glass"
         }
       }
     }

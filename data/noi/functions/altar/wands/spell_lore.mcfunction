@@ -1,4 +1,4 @@
-execute store result score #size noi.math run data get entity @s item.tag.SpellSlotsCount
+execute store result score #size noi.math run data get entity @s item.components.minecraft:custom_data.SpellSlotsCount
 
 execute if score #size noi.math matches 0 run return 0
 $data modify storage temp:local wand_lore append value '{"italic":false,"color":"#9696FF","text":"1: $(1)"}'

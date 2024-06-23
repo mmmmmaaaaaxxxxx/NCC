@@ -39,6 +39,8 @@
         "chest",
         "nether_star",
         "note_block",
-        "beacon"
+        "beacon",
+        "deepslate_tiles",
+        "lantern"
     ]
 }

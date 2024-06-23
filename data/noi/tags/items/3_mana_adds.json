@@ -38,6 +38,17 @@
         "bricks",
         "tuff",
         "beacon",
-        "netherrack"
+        "netherrack",
+        "gold_block",
+        "redstone_lamp",
+        "honeycomb_block",
+        "soul_lantern",
+        "damaged_anvil",
+        "brewing_stand",
+        "string",
+        "#minecraft:leaves",
+        "shroomlight",
+        "nether_wart_block",
+        "warped_wart_block"
     ]
 }

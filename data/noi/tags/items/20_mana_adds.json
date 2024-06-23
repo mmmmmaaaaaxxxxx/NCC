@@ -46,6 +46,11 @@
         "beacon",
         "netherrack",
         "obsidian",
-        "crying_obsidian"
+        "crying_obsidian",
+        "sea_lantern",
+        "verdant_froglight",
+        "pearlescent_froglight",
+        "emerald",
+        "emerald_block"
     ]
 }

@@ -24,6 +24,7 @@ execute as @e[type=marker,tag=noi.dripstone_drill,predicate=!noi:riding] at @s r
 execute as @e[type=marker,tag=noi.thrown_block,predicate=!noi:riding] at @s run function noi:spell/extra/generic_block_trigger_1
 execute as @e[type=marker,tag=noi.thrown_ball,predicate=!noi:riding] at @s run function noi:spell/extra/generic_ball_trigger_0
 execute as @e[type=marker,tag=noi.const_direction,predicate=!noi:riding] at @s run function noi:spell/extra/const_direction_trigger
+execute as @e[type=marker,tag=noi.potion,predicate=!noi:riding] at @s run function noi:spell/extra/brewing_stand_trigger with entity @s data
 
 execute as @e[type=interaction,nbt={interaction:{}},tag=noi.wandholder] at @s run function noi:altar/wands/main
 execute as @e[type=interaction,nbt={interaction:{}},tag=noi.spellholder] at @s run function noi:altar/spells/main

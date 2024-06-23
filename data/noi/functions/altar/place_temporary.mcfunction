@@ -6,3 +6,4 @@ summon interaction ~ ~ ~ {width:2f,height:2f,Tags:["noi.wandholder","noi.empty",
 execute at @e[tag=current] run function noi:altar/wands/insert
 tag @e[tag=current] remove current
 tag @e[tag=done] remove done
+tag @e[tag=current2] remove current2

@@ -24,6 +24,14 @@
         "elytra",
         "end_rod",
         "netherrack",
-        "obsidian"
+        "obsidian",
+        "glowstone",
+        "end_stone",
+        "ochre_froglight",
+        "emerald",
+        "powder_snow_bucket",
+        "lead",
+        "saddle",
+        "damaged_anvil"
     ]
 }

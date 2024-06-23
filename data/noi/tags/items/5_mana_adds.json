@@ -43,6 +43,25 @@
         "glow_ink_sac",
         "crying_obsidian",
         "milk_bucket",
-        "rose_bush"
+        "rose_bush",
+        "magma_block",
+        "sea_lantern",
+        "prismarine_crystals",
+        "prismarine_shard",
+        "dark_prismarine",
+        "prismarine_bricks",
+        "gold_ingot",
+        "gold_block",
+        "honeycomb",
+        "phantom_membrane",
+        "pearlescent_froglight",
+        "frogspawn",
+        "carved_pumpkin",
+        "emerald_ore",
+        "deepslate_emerald_ore",
+        "lantern",
+        "jack_o_lantern",
+        "saddle",
+        "string"
     ]
 }

@@ -1,5 +1,6 @@
 scoreboard players add i noi.math 1
-particle dust 0.467 0.31 0.467 .75 ~ ~ ~ 0 0 0 1 0 normal
+
+particle dust{color:[.467,.31,.467],scale:.75} ~ ~ ~ 0 0 0 1 1 normal
 scoreboard players set #continue noi.math 0
 execute if score i noi.math matches ..20 positioned ^ ^ ^.5 positioned ~-.75 ~-.75 ~-.75 run tag @e[tag=!noi.laser_ignore,dx=0,dy=0,dz=0,type=!marker,type=!interaction,type=!armor_stand,type=!boat,type=!minecart,type=!chest_boat,type=!chest_minecart,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame] add noi.target
 execute if score i noi.math matches ..20 positioned ^ ^ ^.5 positioned ~-.25 ~-.25 ~-.25 unless entity @e[tag=!noi.laser_ignore,dx=0,dy=0,dz=0,tag=noi.target] run scoreboard players set #continue noi.math 1

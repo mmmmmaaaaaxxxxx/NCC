@@ -15,6 +15,8 @@ Datapack that adds wands similar to those seen in https://www.youtube.com/watch?
 
 .allow_placing_wand_editors - This is a boolean (0 or 1) that allows players to sneak+rightclick while holding a wand to create a wand editor that will be removed once the wand is taken out of it. This does not affect altars placed with commands.
 
+.limit_default_wand_textures - Boolean that, if true, limits generated wand textures to a subset of those in the resource pack.
+
 ## Others
 The entity tag "noi.nowand" makes players who have it unable to cast spells and immune to targetting spells.
 
@@ -24,3 +26,5 @@ The scoreboard "noi.max_mana" dictates the amount of mana above which players st
 The item tag "#noi:spells" contains every item that can be placed into the wand editor.
 
 The scoreboard "noi.ticks_without_spell" increments for every player every mana tick and is reset when they cast a spell.
+
+The item entities created by the function noi:wand/create have the tag "noi.given_wand".

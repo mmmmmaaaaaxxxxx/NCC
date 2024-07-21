@@ -2,6 +2,10 @@
     "values": [
       "torchflower",
       "sponge",
-      "wet_sponge"
+      "wet_sponge",
+      "lava_bucket",
+      "bucket",
+      "powder_snow_bucket",
+      "water_bucket"
     ]
 }

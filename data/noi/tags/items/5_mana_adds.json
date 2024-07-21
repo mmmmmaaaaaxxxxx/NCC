@@ -30,13 +30,10 @@
         "goat_horn",
         "iron_nugget",
         "brick",
-        "fletching_table",
         "writable_book",
         "tuff",
         "beacon",
-        "end_rod",
         "ender_pearl",
-        "flint",
         "netherrack",
         "firework_star",
         "ink_sac",
@@ -62,6 +59,8 @@
         "lantern",
         "jack_o_lantern",
         "saddle",
-        "string"
+        "string",
+        "trident",
+        "mangrove_leaves"
     ]
 }

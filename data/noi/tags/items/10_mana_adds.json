@@ -19,7 +19,6 @@
         "red_mushroom",
         "nether_star",
         "fire_charge",
-        "fletching_table",
         "beacon",
         "elytra",
         "end_rod",
@@ -32,6 +31,11 @@
         "powder_snow_bucket",
         "lead",
         "saddle",
-        "damaged_anvil"
+        "damaged_anvil",
+        "mangrove_leaves",
+        "milk_bucket",
+        "#minecraft:slabs",
+        "#minecraft:walls",
+        "#minecraft:stairs"
     ]
 }

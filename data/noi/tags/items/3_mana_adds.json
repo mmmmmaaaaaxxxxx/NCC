@@ -49,6 +49,11 @@
         "#minecraft:leaves",
         "shroomlight",
         "nether_wart_block",
-        "warped_wart_block"
+        "warped_wart_block",
+        "trident",
+        "flint",
+        "end_rod",
+        "red_mushroom_block",
+        "brown_mushroom_block"
     ]
 }

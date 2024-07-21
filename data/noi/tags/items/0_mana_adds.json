@@ -13,6 +13,8 @@
         "iron_block",
         "barrel",
         "ender_chest",
-        "activator_rail"
+        "activator_rail",
+        "fletching_table",
+        "observer"
     ]
 }

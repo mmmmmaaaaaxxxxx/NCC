@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "noi:wood_wand"
+      }
+    }
+  },
+  "rewards": {
+    "function": "noi:wand/craft/wood_wand"
+  }
+}

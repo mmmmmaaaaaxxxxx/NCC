@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {"noi.mana_potion":1}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "noi:mana/gain/mana_potion"
+  }
+}

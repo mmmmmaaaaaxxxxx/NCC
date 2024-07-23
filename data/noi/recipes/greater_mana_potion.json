@@ -1,33 +1,36 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " 2 ",
+    "424",
     "131",
-    " 1 "
+    "414"
   ],
   "key": {
     "1": {
       "item": "minecraft:copper_ingot"
     },
     "2": {
-      "item": "minecraft:lapis_lazuli"
+      "item": "minecraft:lapis_block"
     },
     "3": {
       "item": "minecraft:glass_bottle"
+    },
+    "4": {
+      "item": "minecraft:amethyst_shard"
     }
   },
   "result": {
     "id": "minecraft:potion",
     "components": {
-      "minecraft:item_name": "[{'text':'Lesser Mana Potion','italic':false}]",
-      "minecraft:custom_data": {"noi.lesser_mana_potion":1},
+      "minecraft:item_name": "[{'text':'Greater Mana Potion','italic':false}]",
+      "minecraft:custom_data": {"noi.greater_mana_potion":1},
       "minecraft:max_stack_size": 16,
       "minecraft:rarity": "uncommon",
       "minecraft:hide_additional_tooltip": {},
       "minecraft:lore": [
-        "{\"color\":\"#D67428\",\"italic\":false,\"text\":\"Mana: 20\"}"
+        "{\"color\":\"#D67428\",\"italic\":false,\"text\":\"Mana: 100\"}"
       ],
-      "potion_contents": {"custom_color": 13908953}
+      "potion_contents": {"custom_color": 13645402}
     }
   }
 }

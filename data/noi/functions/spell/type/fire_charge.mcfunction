@@ -6,5 +6,5 @@ $summon marker ~ ~ ~ {Tags:["noi.const_direction","current2"],data:{UUID:$(UUID)
 execute as @e[tag=current2] run tp @s ~ ~ ~ ~ ~
 
 ride @e[tag=current2,limit=1] mount @e[tag=current,limit=1]
-tag @e[tag=current] remove current
+
 tag @e[tag=current2] remove current2

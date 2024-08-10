@@ -1,3 +1,5 @@
+#this cycles @s's x, y, and z velocities
+
 execute if entity @s[type=player] run function noi:spell/extra/honeycomb_block_player
 execute if entity @s[type=!player] run function noi:spell/extra/honeycomb_block_nonplayer
 

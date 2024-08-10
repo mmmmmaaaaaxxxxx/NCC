@@ -15,15 +15,16 @@ scoreboard objectives add noi.settings dummy
 scoreboard objectives add noi.cooldown dummy
 scoreboard objectives add noi.raw_mana dummy
 scoreboard objectives add noi.api dummy
+scoreboard objectives add noi.lookup dummy
 
 scoreboard players set #-1 noi.math -1
 scoreboard players set #2 noi.math 2
 scoreboard players set #3 noi.math 3
 scoreboard players set #4 noi.math 4
 
-scoreboard players set @a noi.mana 100
-scoreboard players set @a noi.stored_mana 0
+function noi:setlookups
 
+#I'd like the next two lines to not be necessary but I'm not confident that they are not used anywhere
 data merge storage noi:att {generic_block:{generic_block:{}},generic_ball:{generic_ball:{}},null:{null:{}},ball_mod:{ball_mod:{}},generic_disc:{generic_disc:{}},generic_wool:{generic_wool:{}},generic_dye:{generic_dye:{}},generic_glass_pane:{generic_glass_pane:{}}}
 data merge storage noi:lookup {slime_ball:{slime_ball:{}},slime_block:{slime_block:{}},honey_block:{honey_block:{}},anvil:{anvil:{}}}
 data modify storage noi:data glass_colors set value {gray_stained_glass:{color:"0.278,0.310,0.322"},white_stained_glass:{color:"0.976,1.000,0.996"},light_gray_stained_glass:{color:"0.616,0.616,0.592"},black_stained_glass:{color:"0.114,0.114,0.129"},brown_stained_glass:{color:"0.514,0.329,0.196"},red_stained_glass:{color:"0.690,0.180,0.149"},orange_stained_glass:{color:"0.976,0.502,0.114"},yellow_stained_glass:{color:"0.996,0.847,0.239"},lime_stained_glass:{color:"0.502,0.780,0.122"},green_stained_glass:{color:"0.369,0.486,0.086"},cyan_stained_glass:{color:"0.086,0.612,0.612"},light_blue_stained_glass:{color:"0.227,0.702,0.855"},blue_stained_glass:{color:"0.235,0.267,0.667"},purple_stained_glass:{color:"0.537,0.196,0.722"},magenta_stained_glass:{color:"0.780,0.306,0.741"},pink_stained_glass:{color:"0.953,0.545,0.667"}}

@@ -36,6 +36,10 @@
         "milk_bucket",
         "#minecraft:slabs",
         "#minecraft:walls",
-        "#minecraft:stairs"
+        "#minecraft:stairs",
+        "basalt",
+        "polished_basalt",
+        "smooth_basalt",
+        "fishing_rod"
     ]
 }

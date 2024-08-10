@@ -1,2 +1,2 @@
 #$summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:$(1)"},HurtEntities:1b,Motion:$(Motion),Time:-99999,DropItem:0b,CancelDrop:1b,Passengers:[{id:"minecraft:marker",Tags:["noi.thrown_block","noi.bouncy_object"],data:{UUID:$(UUID),1:$(2),2:$(3),3:$(4),4:$(5),5:$(6),6:$(7),7:$(8),8:$(9),9:$(10),10:$(11),11:$(12),12:$(13),13:$(14),14:$(15),15:$(16),16:"null",1att:$(2att),2att:$(3att),3att:$(4att),4att:$(5att),5att:$(6att),6att:$(7att),7att:$(8att),8att:$(9att),9att:$(10att),10att:$(11att),11att:$(12att),12att:$(13att),13att:$(14att),14att:$(15att),15att:$(16att),16att:"null"}}]}
-$summon $(type) ~ ~ ~ {pickup:2b,Owner:$(UUID),Motion:$(Motion)}
+$summon $(type) ~ ~ ~ {pickup:2b,Owner:$(UUID),Motion:$(Motion),Tags:["current"]}

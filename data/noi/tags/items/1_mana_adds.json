@@ -40,6 +40,11 @@
         "note_block",
         "beacon",
         "deepslate_tiles",
-        "lantern"
+        "lantern",
+        "chain",
+        "granite",
+        "polished_granite",
+        "tipped_arrow",
+        "armor_stand"
     ]
 }

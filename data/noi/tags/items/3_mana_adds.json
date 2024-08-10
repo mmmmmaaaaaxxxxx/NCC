@@ -16,6 +16,7 @@
         "water_bucket",
         "lapis_block",
         "deepslate_lapis_ore",
+        "pufferfish",
         "beef",
         "porkchop",
         "rabbit",
@@ -54,6 +55,8 @@
         "flint",
         "end_rod",
         "red_mushroom_block",
-        "brown_mushroom_block"
+        "brown_mushroom_block",
+        "mossy_cobblestone",
+        "detector_rail"
     ]
 }

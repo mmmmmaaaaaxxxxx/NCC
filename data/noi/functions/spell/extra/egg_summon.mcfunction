@@ -2,10 +2,11 @@ $summon egg ~ ~ ~ {Motion:$(Motion),Item:{id:"minecraft:$(1)",Count:1b},Tags:["c
 execute as @e[tag=current] run function noi:spell/extra/get_vehicle_motion
 tag @e[tag=current] remove current
 
-$execute if data storage noi:att $(2att).ball_mod run summon marker ~ ~ ~ {Tags:["noi.ball_mod","current"],data:{Spell:"$(2)",UUID:$(UUID),Item:$(2)}}
-$execute if data storage noi:att $(2att).generic_dye run summon marker ~ ~ ~ {Tags:["noi.ball_mod","current"],data:{Spell:"generic_dye",UUID:$(UUID),Item:$(2)}}
+$execute if score $(2att) noi.lookup matches 3 run summon marker ~ ~ ~ {Tags:["noi.ball_mod","current"],data:{Spell:"$(2)",UUID:$(UUID),Item:$(2)}}
+$execute if score $(2att) noi.lookup matches 8 run summon marker ~ ~ ~ {Tags:["noi.ball_mod","current"],data:{Spell:"generic_dye",UUID:$(UUID),Item:$(2)}}
 #extremely janky way of making generic dyes work as ball mods ^
 ride @e[tag=current,limit=1] mount @e[tag=current2,limit=1]
 
 tag @e[tag=current] remove current
+tag @e[tag=current2] add current
 tag @e[tag=current2] remove current2

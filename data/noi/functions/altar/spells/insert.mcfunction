@@ -4,3 +4,4 @@ data modify entity @e[tag=current2,limit=1] item.count set value 1b
 item modify entity @s weapon.mainhand noi:remove_one
 tag @e[tag=current] remove noi.empty
 tag @e[tag=current] add done
+playsound minecraft:entity.item_frame.add_item block @a[distance=..16] ~ ~ ~

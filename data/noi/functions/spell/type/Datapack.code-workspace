@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../.."
+		},
+		{
+			"path": "../../../../../../../../../resourcepacks/NCC Resource Pack"
+		},
+		{
+			"path": "../../../../../../delta_datapack"
+		}
+	],
+	"settings": {
+		"workbench.iconTheme": "mc-dp-icons"
+	}
+}

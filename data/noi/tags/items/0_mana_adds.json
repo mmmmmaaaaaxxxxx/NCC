@@ -15,6 +15,10 @@
         "ender_chest",
         "activator_rail",
         "fletching_table",
-        "observer"
+        "observer",
+        "andesite",
+        "polished_andesite",
+        "diorite",
+        "polished_diorite"
     ]
 }

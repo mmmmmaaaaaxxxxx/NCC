@@ -4,7 +4,6 @@
         "recovery_compass",
         "#noi:generic_dyes",
         "pointed_dripstone",
-        "pufferfish",
         "conduit",
         "anvil",
         "#noi:generic_glass",
@@ -61,6 +60,10 @@
         "saddle",
         "string",
         "trident",
-        "mangrove_leaves"
+        "mangrove_leaves",
+        "polished_blackstone",
+        "chiseled_polished_blackstone",
+        "chicken",
+        "hopper"
     ]
 }

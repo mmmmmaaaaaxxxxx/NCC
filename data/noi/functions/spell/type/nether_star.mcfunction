@@ -24,5 +24,5 @@ execute as @e[tag=current2] run tp @s ~ ~ ~ ~ ~
 execute as @e[tag=current2] run data modify entity @s data set from storage temp:local data
 
 ride @e[tag=current2,limit=1] mount @e[tag=current,limit=1]
-tag @e[tag=current] remove current
+
 tag @e[tag=current2] remove current2

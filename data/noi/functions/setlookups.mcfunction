@@ -12,6 +12,7 @@ scoreboard players set honey_block noi.lookup 6
 scoreboard players set anvil noi.lookup 7
 scoreboard players set generic_dye noi.lookup 8
 scoreboard players set amethyst_shard noi.lookup 9
+scoreboard players set armor_stand noi.lookup 9
 scoreboard players set arrow noi.lookup 9
 scoreboard players set axolotl_bucket noi.lookup 9
 scoreboard players set bamboo noi.lookup 9
@@ -50,6 +51,7 @@ scoreboard players set hay_block noi.lookup 9
 scoreboard players set honeycomb noi.lookup 9
 scoreboard players set iron_nugget noi.lookup 9
 scoreboard players set magma_block noi.lookup 9
+scoreboard players set nether_star noi.lookup 9
 scoreboard players set phantom_membrane noi.lookup 9
 scoreboard players set piglin_head noi.lookup 9
 scoreboard players set player_head noi.lookup 9

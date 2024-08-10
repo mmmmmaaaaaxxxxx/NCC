@@ -17,10 +17,14 @@ Datapack that adds wands similar to those seen in https://www.youtube.com/watch?
 
 .limit_default_wand_textures - Boolean that, if true, limits generated wand textures to a subset of those in the resource pack.
 
+.mana_regen - Different values do different things:   0-Players dont gain mana over time    1-Players only gain mana over time from mana potions    2-Players gain mana over time with no requirement, but also gain mana over time from potions.
+
 ## Others
-The entity tag "noi.nowand" makes players who have it unable to cast spells and immune to targetting spells.
+The tag "noi.nowand" makes players who have it unable to cast spells and immune to targetting spells.
 
 The scoreboard "noi.max_mana" dictates the amount of mana above which players stop generating mana. Set automatically if .global_max_mana isn't negative.
+
+The function tag "noi:spell_conditional" is for functions that check if spells should be run the the current execution context. If you dont want spells to run, set the fakeplayer "returnvalue" to 1 for "noi.api". Do not set "returnvalue" to 0. To increase efficiency, please include the line "execute unless score returnvalue noi.api matches 0 run return 0" in the front of your function.
 
 ## Read-only information
 The item tag "#noi:spells" contains every item that can be placed into the wand editor.

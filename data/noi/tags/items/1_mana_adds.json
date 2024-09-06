@@ -1,6 +1,10 @@
 {
     "values": [
         "echo_shard",
+        "diamond",
+        "jukebox",
+        "diamond_ore",
+        "deepslate_diamond_ore",
         "glow_berries",
         "milk_bucket",
         "honey_bottle",

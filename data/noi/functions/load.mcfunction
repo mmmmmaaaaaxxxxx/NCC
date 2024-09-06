@@ -16,6 +16,7 @@ scoreboard objectives add noi.cooldown dummy
 scoreboard objectives add noi.raw_mana dummy
 scoreboard objectives add noi.api dummy
 scoreboard objectives add noi.lookup dummy
+scoreboard objectives add noi.flint_count dummy
 
 scoreboard players set #-1 noi.math -1
 scoreboard players set #2 noi.math 2

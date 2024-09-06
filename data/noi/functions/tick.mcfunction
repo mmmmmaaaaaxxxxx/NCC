@@ -1,5 +1,6 @@
 #yo keep this one at the front
 execute as @a[tag=noi.remove_resistance] run function noi:spell/extra/iron_ingot_1
+scoreboard players set @a[scores={noi.flint_count=1..}] noi.flint_count 0
 
 execute unless score .global_max_mana noi.settings matches ..-1 run scoreboard players operation @a noi.max_mana = .global_max_mana noi.settings
 scoreboard players add #timer noi.math 1
@@ -21,12 +22,7 @@ title @a[scores={noi.stored_mana=1..,noi.raw_mana=1..}] actionbar [{"text":"Mana
 
 execute as @e[type=marker,tag=noi.bouncy_object,predicate=noi:riding] at @s run function noi:spell/extra/get_vehicle_motion
 execute as @e[type=marker,tag=noi.ball_mod,predicate=noi:riding] at @s run function noi:spell/extra/ball_mod with entity @s data
-execute as @e[type=marker,tag=noi.ball_mod,predicate=!noi:riding] run kill
-execute as @e[type=marker,tag=noi.dripstone_drill,predicate=!noi:riding] at @s run function noi:spell/extra/dripstone_trigger with entity @s data
-execute as @e[type=marker,tag=noi.thrown_block,predicate=!noi:riding] at @s run function noi:spell/extra/generic_block_trigger_1
-execute as @e[type=marker,tag=noi.thrown_ball,predicate=!noi:riding] at @s run function noi:spell/extra/generic_ball_trigger_0
-execute as @e[type=marker,tag=noi.const_direction,predicate=!noi:riding] at @s run function noi:spell/extra/const_direction_trigger
-execute as @e[type=marker,tag=noi.potion,predicate=!noi:riding] at @s run function noi:spell/extra/brewing_stand_trigger with entity @s data
+execute as @e[type=marker,predicate=!noi:riding,tag=!noi.scanned] run function noi:marker_trigger
 
 execute as @e[type=interaction,nbt={interaction:{}},tag=noi.wandholder] at @s run function noi:altar/wands/main
 execute as @e[type=interaction,nbt={interaction:{}},tag=noi.spellholder] at @s run function noi:altar/spells/main

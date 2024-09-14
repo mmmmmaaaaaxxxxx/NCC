@@ -19,13 +19,14 @@
   "result": {
     "id": "minecraft:potion",
     "components": {
-      "minecraft:item_name": "[{'text':'Mana Potion','italic':false}]",
+      "minecraft:item_name": "[{\"text\":\"Mana Potion\",\"italic\":false}]",
       "minecraft:custom_data": {"noi.mana_potion":1},
       "minecraft:max_stack_size": 16,
       "minecraft:rarity": "uncommon",
       "minecraft:hide_additional_tooltip": {},
       "minecraft:lore": [
-        "{\"color\":\"#D67428\",\"italic\":false,\"text\":\"Mana: 50\"}"
+        "{\"color\":\"#D67428\",\"italic\":false,\"text\":\"Mana: 50\"}",
+        "{\"color\":\"#D67428\",\"italic\":false,\"text\":\"Max: 250\"}"
       ],
       "potion_contents": {"custom_color": 14236559}
     }

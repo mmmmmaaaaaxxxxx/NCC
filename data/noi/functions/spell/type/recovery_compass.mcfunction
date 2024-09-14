@@ -1,5 +1,5 @@
-execute if entity @s[type=player] positioned ~ ~-1.5 ~ as @p[distance=.001..3.5] run tag @s add current
-execute unless entity @s[type=player] as @p[distance=.001..3.5] run tag @s add current
+execute if entity @s[type=player] positioned ~ ~-1.5 ~ as @p[distance=.001..3.5,gamemode=!spectator] run tag @s add current
+execute unless entity @s[type=player] as @p[distance=.001..3.5,gamemode=!spectator] run tag @s add current
 
 execute if entity @e[tag=current] facing entity @e[tag=current,limit=1] feet positioned ^ ^ ^.3 run function noi:spell/extra/rcompass_line
 

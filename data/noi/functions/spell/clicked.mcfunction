@@ -1,5 +1,4 @@
-execute if predicate noi:sneaking positioned ~ ~ ~ run function noi:altar/place_temporary
-execute if score .allow_placing_wand_editors noi.settings matches 1 if predicate noi:sneaking run return 0
+execute if score .allow_placing_wand_editors noi.settings matches 1 if predicate noi:sneaking run return run function noi:altar/place_temporary
 
 #polished basalt the reason for lines 5 and 11, wands can cast multiple times from 1 click otherwise
 execute store result score #has_offhand_wand noi.math if entity @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{noi.wand:1b,noi.wand_format:2}}}]}]

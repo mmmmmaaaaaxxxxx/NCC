@@ -1,5 +1,4 @@
 #yo keep this one at the front
-execute as @a[tag=noi.remove_resistance] run function noi:spell/extra/iron_ingot_1
 scoreboard players set @a[scores={noi.flint_count=1..}] noi.flint_count 0
 
 execute unless score .global_max_mana noi.settings matches ..-1 run scoreboard players operation @a noi.max_mana = .global_max_mana noi.settings

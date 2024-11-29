@@ -5,8 +5,8 @@ execute positioned ^ ^ ^2 run tag @e[tag=!current,type=!marker,type=!interaction
 execute positioned ^ ^ ^3 run tag @e[tag=!current,type=!marker,type=!interaction,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame,tag=!noi.ignore,distance=..3] add current
 execute positioned ^ ^ ^4 run tag @e[tag=!current,type=!marker,type=!interaction,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame,tag=!noi.ignore,distance=..3] add current
 
-scoreboard players set $strength delta.api.launch 18000
-execute as @a[tag=current] facing ^ ^ ^-1 run function delta:api/launch_looking
+scoreboard players set $strength player_motion.api.launch 18000
+execute as @a[tag=current] facing ^ ^ ^-1 run function player_motion:api/launch_looking
 execute as @e[type=!player,tag=current] unless score @s noi.cooldown matches 1.. facing ^ ^ ^-1 run function noi:spell/extra/launch_facing {strength:"1.8"}
 #this stops arrows from being boosted many times and dealing ludicrous damage
 execute as @e[type=#minecraft:arrows,tag=current] run scoreboard players set @s noi.cooldown 2

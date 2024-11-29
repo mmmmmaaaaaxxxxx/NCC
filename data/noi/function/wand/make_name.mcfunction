@@ -14,7 +14,7 @@ execute if score #random noi.math matches 2.. run scoreboard players set lonely 
 execute if score #random noi.math matches 2.. store result storage temp:macro random int 1 run random value 0..175
 execute if score #random noi.math matches 2.. run function noi:wand/insert_wand_adjective with storage temp:macro
 
-execute store result storage temp:macro random int 1 run random value 0..27
+execute store result storage temp:macro random int 1 run random value 0..28
 function noi:wand/insert_wand_noun with storage temp:macro
 
 execute store result score #random noi.math run random value 1..4

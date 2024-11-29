@@ -1,1 +1,1 @@
-#maybe in the future but its too complicated to bother with for an -alpha- beta version
+#maybe in the future but its too complicated to bother with for an -alpha- -beta version- v1.0

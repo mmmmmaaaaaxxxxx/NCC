@@ -6,7 +6,6 @@
         "pointed_dripstone",
         "conduit",
         "anvil",
-        "#noi:generic_glass",
         "torchflower_seeds",
         "pitcher_pod",
         "pufferfish_bucket",
@@ -24,7 +23,7 @@
         "#minecraft:axes",
         "bucket",
         "sculk_catalyst",
-        "minecraft:moss_block",
+        "minecraft:moss_carpet",
         "nether_star",
         "goat_horn",
         "iron_nugget",
@@ -66,6 +65,14 @@
         "chicken",
         "hopper",
         "snow",
-        "#minecraft:boats"
+        "#minecraft:boats",
+        "#noi:generic_glass_pane",
+        "glass",
+        "large_amethyst_bud",
+        "enchanting_table",
+        "grindstone",
+        "composter",
+        "filled_map",
+        "wind_charge"
     ]
 }

@@ -32,7 +32,6 @@
         "sniffer_egg",
         "amethyst_shard",
         "sculk_shrieker",
-        "#noi:generic_glass_pane",
         "cooked_beef",
         "cooked_mutton",
         "cooked_porkchop",
@@ -51,6 +50,12 @@
         "emerald_block",
         "gilded_blackstone",
         "basalt",
-        "lightning_rod"
+        "minecraft:iron_ingot",
+        "lightning_rod",
+        "glass_pane",
+        "amethyst_block",
+        "budding_amethyst",
+        "small_amethyst_bud",
+        "grindstone"
     ]
 }

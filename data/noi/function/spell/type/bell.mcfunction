@@ -1,7 +1,7 @@
 execute positioned ~ ~ ~ summon marker run tag @s add current
-scoreboard players set $strength delta.api.launch 15000
+scoreboard players set $strength player_motion.api.launch 15000
 tag @s add noi.dont_launch_meh
-execute as @a[tag=!noi.dont_launch_meh,distance=..3.5] at @e[tag=current] facing entity @s eyes run function delta:api/launch_looking
+execute as @a[tag=!noi.dont_launch_meh,distance=..3.5] at @e[tag=current] facing entity @s eyes run function player_motion:api/launch_looking
 execute as @e[tag=!noi.dont_launch_meh,distance=0.001..3.5,tag=!current,type=!marker,type=!interaction,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame,type=!player] unless score @s noi.cooldown matches 1.. at @e[tag=current] facing entity @s eyes run function noi:spell/extra/launch_facing {strength:"1.5"}
 execute as @e[tag=!noi.dont_launch_meh,distance=0.001..3.5,tag=!current,type=arrow] run scoreboard players set @s noi.cooldown 2
 

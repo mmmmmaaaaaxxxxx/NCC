@@ -48,6 +48,8 @@
         "granite",
         "polished_granite",
         "tipped_arrow",
-        "armor_stand"
+        "armor_stand",
+        "#noi:generic_glass",
+        "chiseled_deepslate"
     ]
 }

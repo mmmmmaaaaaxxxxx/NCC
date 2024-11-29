@@ -1,6 +1,5 @@
 {
     "values": [
-        "minecraft:iron_ingot",
         "minecraft:tnt",
         "minecraft:gunpowder",
         "#minecraft:flowers",
@@ -59,6 +58,13 @@
         "mossy_cobblestone",
         "detector_rail",
         "small_dripleaf",
-        "big_dripleaf"
+        "big_dripleaf",
+        "tinted_glass",
+        "#noi:generic_glass",
+        "map",
+        "moss_block",
+        "flow_banner_pattern",
+        "stone_bricks",
+        "spider_eye"
     ]
 }

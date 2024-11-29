@@ -1,0 +1,6 @@
+tag @s add noi.local_variable
+
+$execute store result score score @s noi.mana_math run function noi:altar/wands/compile_mana/init {1:$(2),2:$(4),3:$(6),4:$(8),5:$(10),6:$(12),7:$(14),8:$(16),9:"null",10:"null",11:"null",12:"null",13:"null",14:"null",15:"null",16:"null",1mana:$(2mana),2mana:$(4mana),3mana:$(6mana),4mana:$(8mana),5mana:$(10mana),6mana:$(12mana),7mana:$(14mana),8mana:$(16mana),9mana:0,10mana:0,11mana:0,12mana:0,13mana:0,14mana:0,15mana:0,16mana:0}
+$execute store result score mana_cost noi.math run function noi:altar/wands/compile_mana/init {1:$(3),2:$(5),3:$(7),4:$(9),5:$(11),6:$(13),7:$(15),8:"null",9:"null",10:"null",11:"null",12:"null",13:"null",14:"null",15:"null",16:"null",1mana:$(3mana),2mana:$(5mana),3mana:$(7mana),4mana:$(9mana),5mana:$(11mana),6mana:$(13mana),7mana:$(15mana),8mana:0,9mana:0,10mana:0,11mana:0,12mana:0,13mana:0,14mana:0,15mana:0,16mana:0}
+scoreboard players operation mana_cost noi.math += @s noi.mana_math
+$return run scoreboard players add mana_cost noi.math $(1mana)

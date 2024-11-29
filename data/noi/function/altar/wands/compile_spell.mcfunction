@@ -34,26 +34,35 @@ execute positioned ^.5 ^ ^14.5 run data modify entity @s item.components.minecra
 execute positioned ^.5 ^ ^15.5 run data modify entity @s item.components.minecraft:custom_data.Spell.15 set string entity @e[tag=noi.spellholder_display,distance=...0001,limit=1] item.id 10
 execute positioned ^.5 ^ ^16.5 run data modify entity @s item.components.minecraft:custom_data.Spell.16 set string entity @e[tag=noi.spellholder_display,distance=...0001,limit=1] item.id 10
 
-#I compile them backwards so that a multiplier from the first spell multiplies all of the costs of the nexts while one in the 16th slot multiplies nothing
-scoreboard players set mana noi.math 0
-execute positioned ^.5 ^ ^16.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:16}
-execute positioned ^.5 ^ ^15.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:15}
-execute positioned ^.5 ^ ^14.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:14}
-execute positioned ^.5 ^ ^13.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:13}
-execute positioned ^.5 ^ ^12.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:12}
-execute positioned ^.5 ^ ^11.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:11}
-execute positioned ^.5 ^ ^10.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:10}
-execute positioned ^.5 ^ ^9.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:9}
-execute positioned ^.5 ^ ^8.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:8}
-execute positioned ^.5 ^ ^7.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:7}
-execute positioned ^.5 ^ ^6.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:6}
-execute positioned ^.5 ^ ^5.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:5}
-execute positioned ^.5 ^ ^4.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:4}
-execute positioned ^.5 ^ ^3.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:3}
-execute positioned ^.5 ^ ^2.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:2}
-execute positioned ^.5 ^ ^1.5 if entity @e[type=item_display,tag=noi.spellholder_display,distance=...0001] run function noi:altar/wands/compile_att_and_mana {path:1}
+#There is no longer a reason to compile them backwards but i aint fixing it
+data modify storage temp:local spell set value {}
+data modify storage temp:local manaspell set value {1mana:0,2mana:0,3mana:0,4mana:0,5mana:0,6mana:0,7mana:0,8mana:0,9mana:0,10mana:0,11mana:0,12mana:0,13mana:0,14mana:0,15mana:0,16mana:0}
+execute positioned ^.5 ^ ^16.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:16}
+execute positioned ^.5 ^ ^15.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:15}
+execute positioned ^.5 ^ ^14.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:14}
+execute positioned ^.5 ^ ^13.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:13}
+execute positioned ^.5 ^ ^12.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:12}
+execute positioned ^.5 ^ ^11.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:11}
+execute positioned ^.5 ^ ^10.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:10}
+execute positioned ^.5 ^ ^9.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:9}
+execute positioned ^.5 ^ ^8.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:8}
+execute positioned ^.5 ^ ^7.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:7}
+execute positioned ^.5 ^ ^6.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:6}
+execute positioned ^.5 ^ ^5.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:5}
+execute positioned ^.5 ^ ^4.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:4}
+execute positioned ^.5 ^ ^3.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:3}
+execute positioned ^.5 ^ ^2.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:2}
+execute positioned ^.5 ^ ^1.5 as @e[type=item_display,tag=noi.spellholder_display,distance=...0001,limit=1] run function noi:altar/wands/compile_att_and_mana {path:1}
+data modify entity @s item.components."minecraft:custom_data".Spell merge from storage temp:local spell
+
+#simulates the control flow of the spell
+data modify storage temp:local manaspell merge from entity @s item.components."minecraft:custom_data".Spell
+execute store result score mana noi.math run function noi:altar/wands/compile_mana/init with storage temp:local manaspell
 execute store result score mana_add noi.math run data get entity @s item.components.minecraft:custom_data.BaseManaCost 100
-execute store result entity @s item.components.minecraft:custom_data.Spell.Mana int .01 run scoreboard players operation mana noi.math += mana_add noi.math
+scoreboard players operation mana noi.math += mana_add noi.math
+execute store result entity @s item.components.minecraft:custom_data.Spell.Mana int .01 run scoreboard players get mana noi.math
+
+kill @e[type=marker,tag=noi.local_variable,distance=..1]
 
 
 #Backwards compatability the first :D

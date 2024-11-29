@@ -1,6 +1,6 @@
 #null
 scoreboard players set null noi.lookup 1
-#runs the att as the function instead of the item id
+#runs the function using att instead of item id
 scoreboard players set generic_block noi.lookup 2
 scoreboard players set generic_ball noi.lookup 2
 scoreboard players set generic_disc noi.lookup 2
@@ -27,6 +27,7 @@ scoreboard players set bamboo_raft noi.lookup 9
 scoreboard players set bamboo noi.lookup 9
 scoreboard players set birch_boat noi.lookup 9
 scoreboard players set birch_chest_boat noi.lookup 9
+scoreboard players set breeze_rod noi.lookup 9
 scoreboard players set brewing_stand noi.lookup 9
 scoreboard players set cactus noi.lookup 9
 scoreboard players set carrot noi.lookup 9
@@ -62,6 +63,7 @@ scoreboard players set frogspawn noi.lookup 9
 scoreboard players set gilded_blackstone noi.lookup 9
 scoreboard players set golden_apple noi.lookup 9
 scoreboard players set golden_carrot noi.lookup 9
+scoreboard players set grindstone noi.lookup 9
 scoreboard players set hay_block noi.lookup 9
 scoreboard players set honeycomb noi.lookup 9
 scoreboard players set iron_nugget noi.lookup 9
@@ -99,5 +101,6 @@ scoreboard players set tropical_fish_bucket noi.lookup 9
 scoreboard players set tropical_fish noi.lookup 9
 scoreboard players set warped_fungus noi.lookup 9
 scoreboard players set wheat noi.lookup 9
+scoreboard players set wind_charge noi.lookup 9
 scoreboard players set wither_skeleton_skull noi.lookup 9
 scoreboard players set zombie_head noi.lookup 9

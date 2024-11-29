@@ -1,12 +1,20 @@
 Datapack that adds wands similar to those seen in https://www.youtube.com/watch?v=I5lOKaQl-cY.
+Version 1.1.0+ runs on Minecraft 1.21.1
+# Dependencies
+## Player Motion by MulverineX
+https://github.com/MulverineX/player_motion (make sure to install a version that works on 1.21.1)
 
 # API
 ## Functions
 /function noi:altar/place - Places a wand editor.
 
-/function noi:wand/create {size:Byte,base_cost:Int} - Gives a wand to the player this was run as. Size is the number of spell slots the wand you are creating has has and works from 0 to 16, base_cost is the cost added after all other calculations and can be any signed Int.
+/function noi:wand/create {size:Byte,base_cost:Int} - Gives a wand to the player this was run as. Size is the number of spell slots the wand you are creating has and works from 0 to 16, base_cost is the cost added after all other calculations and can be any signed Int.
 
 /function noi:reset_settings - Sets the fake players in noi.settings to the configuration I usually use in public implementations of NCC. Run this to make the pack work when you first install it if you don't really care about the settings.
+
+/function noi:utils/clear_attribute_modifiers - Clears any attribute modifiers that the entity this runs as might have been given by the pack.
+
+/function noi:utils/give_potions - Gives the entity this runs as one of each potion this pack adds.
 
 ## Scoreboard fake players in noi.settings
 .global_max_mana - Players will gain mana over time if they have less mana than this amount. Set this to a negative number if you want to set maximum mana manually.

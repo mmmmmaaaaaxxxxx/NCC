@@ -7,8 +7,16 @@ scoreboard players set generic_disc noi.lookup 2
 scoreboard players set generic_wool noi.lookup 2
 scoreboard players set generic_glass noi.lookup 2
 scoreboard players set generic_glass_pane noi.lookup 2
-#3 thru 7 are all just for detecting themselves
-scoreboard players set ball_mod noi.lookup 3
+#ball mods
+scoreboard players set bucket noi.lookup 3
+scoreboard players set firework_star noi.lookup 3
+scoreboard players set lava_bucket noi.lookup 3
+scoreboard players set powder_snow_bucket noi.lookup 3
+scoreboard players set sponge noi.lookup 3
+scoreboard players set torchflower noi.lookup 3
+scoreboard players set water_bucket noi.lookup 3
+scoreboard players set wet_sponge noi.lookup 3
+#4 thru 7 are all just for detecting themselves
 scoreboard players set slime_ball noi.lookup 4
 scoreboard players set slime_block noi.lookup 5
 scoreboard players set honey_block noi.lookup 6
@@ -97,6 +105,7 @@ scoreboard players set spruce_boat noi.lookup 9
 scoreboard players set spruce_chest_boat noi.lookup 9
 scoreboard players set sweet_berries noi.lookup 9
 scoreboard players set tadpole_bucket noi.lookup 9
+scoreboard players set trident noi.lookup 9
 scoreboard players set tropical_fish_bucket noi.lookup 9
 scoreboard players set tropical_fish noi.lookup 9
 scoreboard players set warped_fungus noi.lookup 9

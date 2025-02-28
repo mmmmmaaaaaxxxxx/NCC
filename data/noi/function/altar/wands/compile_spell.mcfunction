@@ -69,4 +69,4 @@ kill @e[type=marker,tag=noi.local_variable,distance=..1]
 execute unless data entity @s item.components.minecraft:custom_data.BaseManaCost run data modify entity @s item.components.minecraft:custom_data.BaseManaCost set value 2
 
 #the second :D
-data modify entity @s item.components.minecraft:custom_data."noi.wand_format" set value 2
+data modify entity @s item.components.minecraft:custom_data."noi.wand_format" set value 3

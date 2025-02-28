@@ -1,7 +1,6 @@
 data modify storage temp:local att set value "null"
 execute if entity @s[predicate=noi:generic_block] run data modify storage temp:local att set value "generic_block"
 execute if entity @s[predicate=noi:generic_ball] run data modify storage temp:local att set value "generic_ball"
-execute if entity @s[predicate=noi:ball_mod] run data modify storage temp:local att set value "ball_mod"
 execute if entity @s[predicate=noi:generic_disc] run data modify storage temp:local att set value "generic_disc"
 execute if entity @s[predicate=noi:generic_wool] run data modify storage temp:local att set value "generic_wool"
 execute if entity @s[predicate=noi:generic_dye] run data modify storage temp:local att set value "generic_dye"

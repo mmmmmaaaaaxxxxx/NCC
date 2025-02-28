@@ -4,9 +4,10 @@ $execute if score $(1) noi.lookup matches 4 run summon snowball ~ ~ ~ {Motion:$(
 execute as @e[tag=current] run function noi:spell/extra/get_vehicle_motion
 tag @e[tag=current] remove current
 
-$execute if score $(2att) noi.lookup matches 3 run summon marker ~ ~ ~ {Tags:["noi.ball_mod","current"],data:{Spell:"$(2)",UUID:$(UUID),Item:$(2)}}
+#ball mods have a lookup of 3. they run every tick of the ball's flight
+$execute if score $(2) noi.lookup matches 3 run summon marker ~ ~ ~ {Tags:["noi.ball_mod","current"],data:{Spell:"$(2)",UUID:$(UUID),Item:$(2)}}
+#extremely janky way of making generic dyes work as ball mods
 $execute if score $(2att) noi.lookup matches 8 run summon marker ~ ~ ~ {Tags:["noi.ball_mod","current"],data:{Spell:"generic_dye",UUID:$(UUID),Item:$(2)}}
-#extremely janky way of making generic dyes work as ball mods ^
 ride @e[tag=current,limit=1] mount @e[tag=current2,limit=1]
 
 tag @e[tag=current] remove current

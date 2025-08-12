@@ -9,7 +9,7 @@ tag @s add noi.tokill
 
 execute unless block ^ ^ ^.5 #noi:laser_pass_through unless entity @s[tag=noi.tinted_glass_ball] run return run function noi:spell/init with entity @s data
 
-execute positioned ^ ^ ^.5 positioned ~-.75 ~-.75 ~-.75 run tag @e[tag=!noi.laser_ignore,dx=0,dy=0,dz=0,type=!marker,type=!interaction,type=!armor_stand,type=!boat,type=!minecart,type=!chest_boat,type=!chest_minecart,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame] add noi.target
+execute positioned ^ ^ ^.5 positioned ~-.75 ~-.75 ~-.75 run tag @e[tag=!noi.laser_ignore,dx=0,dy=0,dz=0,type=!marker,type=!interaction,type=!armor_stand,type=!#boat,type=!minecart,type=!#noi:chest_boat,type=!chest_minecart,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame] add noi.target
 execute positioned ^ ^ ^.5 positioned ~-.25 ~-.25 ~-.25 as @e[tag=!noi.laser_ignore,dx=0,dy=0,dz=0,tag=noi.target] run tag @s add noi.hit
 
 tag @e[tag=noi.target,distance=..30] remove noi.target
@@ -21,7 +21,7 @@ tag @s remove current
 
 execute if entity @s[tag=noi.glass_pane_ball] unless block ^ ^ ^1 #noi:laser_pass_through run return run function noi:spell/init with entity @s data
 
-execute if entity @s[tag=noi.glass_pane_ball] positioned ^ ^ ^1 positioned ~-.75 ~-.75 ~-.75 run tag @e[tag=!noi.laser_ignore,dx=0,dy=0,dz=0,type=!marker,type=!interaction,type=!armor_stand,type=!boat,type=!minecart,type=!chest_boat,type=!chest_minecart,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame] add noi.target
+execute if entity @s[tag=noi.glass_pane_ball] positioned ^ ^ ^1 positioned ~-.75 ~-.75 ~-.75 run tag @e[tag=!noi.laser_ignore,dx=0,dy=0,dz=0,type=!marker,type=!interaction,type=!armor_stand,type=!#boat,type=!minecart,type=!#noi:chest_boat,type=!chest_minecart,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame] add noi.target
 execute if entity @s[tag=noi.glass_pane_ball] positioned ^ ^ ^1 positioned ~-.25 ~-.25 ~-.25 as @e[tag=!noi.laser_ignore,dx=0,dy=0,dz=0,tag=noi.target] run tag @s add noi.hit
 
 execute if entity @s[tag=noi.glass_pane_ball] run tag @e[tag=noi.target,distance=..30] remove noi.target

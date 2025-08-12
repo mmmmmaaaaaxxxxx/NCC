@@ -7,3 +7,5 @@ data modify block 113 81 11 Items[0].tag.Spell[] set string entity @s SelectedIt
 execute as 71519333-9bf4-47fc-859c-85bad958c556 on vehicle run say 1
 
 #I dont believe anything triggers this function but im not sure what i was trying to save for later
+
+#I know that nothing calls this (I learned how to do ctrl+shift+f in vsc) but I'm going to keep it anyway

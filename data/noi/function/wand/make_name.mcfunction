@@ -1,3 +1,5 @@
+# Algorithm stolen from the NC wand name code
+
 data modify storage temp:local wandTitle set value []
 
 execute store result score #random noi.math run random value 1..10

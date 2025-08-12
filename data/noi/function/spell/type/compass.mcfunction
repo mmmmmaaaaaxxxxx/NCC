@@ -1,5 +1,5 @@
-execute if entity @s[type=player] positioned ~ ~-1.5 ~ as @e[limit=1,sort=nearest,distance=.0001..4,gamemode=!spectator,type=!block_display,type=!marker,type=!interaction,type=!armor_stand,type=!boat,type=!minecart,type=!chest_boat,type=!chest_minecart,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame] run tag @s add current
-execute unless entity @s[type=player] as @e[limit=1,sort=nearest,distance=.0001..4,type=!block_display,gamemode=!spectator,type=!marker,type=!interaction,type=!armor_stand,type=!boat,type=!minecart,type=!chest_boat,type=!chest_minecart,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame] run tag @s add current
+execute if entity @s[type=player] positioned ~ ~-1.5 ~ as @e[limit=1,sort=nearest,distance=.0001..4,gamemode=!spectator,type=!block_display,type=!marker,type=!interaction,type=!armor_stand,type=!#boat,type=!minecart,type=!#noi:chest_boat,type=!chest_minecart,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame] run tag @s add current
+execute unless entity @s[type=player] as @e[limit=1,sort=nearest,distance=.0001..4,type=!block_display,gamemode=!spectator,type=!marker,type=!interaction,type=!armor_stand,type=!#boat,type=!minecart,type=!#noi:chest_boat,type=!chest_minecart,type=!item_display,type=!painting,type=!item_frame,type=!glow_item_frame] run tag @s add current
 
 execute if entity @e[tag=current] facing entity @e[tag=current,limit=1] feet positioned ^ ^ ^.3 run function noi:spell/extra/compass_line
 

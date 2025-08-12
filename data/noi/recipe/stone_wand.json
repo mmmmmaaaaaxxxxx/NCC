@@ -6,21 +6,28 @@
     " 2 "
   ],
   "key": {
-    "1": {
-      "tag": "minecraft:stone_tool_materials"
-    },
-    "2": {
-      "item": "minecraft:stick"
-    }
+    "1": "#minecraft:stone_tool_materials",
+    "2": "stick"
   },
   "result": {
     "id": "minecraft:warped_fungus_on_a_stick",
     "components": {
-      "minecraft:custom_name": "[{\"text\":\"Stone Wand\",\"italic\":false}]",
+      "minecraft:custom_name": {
+        "text": "Stone Wand",
+        "italic": false
+      },
       "minecraft:custom_data": {"noi.crafted_wand_stone":1, "noi.crafted_wand":1},
       "minecraft:lore": [
-        "{\"text\":\"Base Cost: 6\",\"italic\":false,\"color\":\"#CC3ED6\"}",
-        "{\"text\":\"Size: 2\",\"italic\":false,\"color\":\"#9696FF\"}"
+        {
+          "text": "Base Cost: 6",
+          "color": "#cc3ed6",
+          "italic": false
+        },
+        {
+          "text": "Size: 2",
+          "color": "#9696FF",
+          "italic": false
+        }
       ]
     }
   }

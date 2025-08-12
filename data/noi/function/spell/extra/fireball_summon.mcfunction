@@ -1,1 +1,1 @@
-$summon fireball ~ ~ ~ {Motion:$(Motion),ExplosionPower:$(Power),Tags:[current],power:$(Motion),Owner:$(UUID)}
+$summon fireball ~ ~ ~ {Motion:$(Motion),ExplosionPower:$(Power),Tags:[current],acceleration_power:$(Motion),Owner:$(UUID)}

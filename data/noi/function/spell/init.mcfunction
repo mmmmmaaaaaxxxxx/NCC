@@ -1,6 +1,5 @@
 #this is the most important function that everything else works through
 execute if score dontclearcurrent noi.math matches 0 run tag @e[tag=current] remove current
-scoreboard players set dontclearcurrent noi.math 0
 kill @e[tag=noi.tokill]
 
 #add your own function to noi:spell_conditional and if you dont want a spell to run in the current execution context, set the fakeplayer returnvalue to 1 for noi.api
